@@ -1,0 +1,113 @@
+.card{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card.-cats .link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.card.-cats figure{
+    margin: 0;
+}
+
+.card.-cats figure::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.card.-cats figcaption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #fff;
+    z-index: 5;
+    transition: ease .5s;
+}
+
+.card .-cats img{
+    width: 100%;
+    transition: ease .5s;
+}
+
+.card .-cats:hover figcaption{
+    transform: scale(1.15) ;
+}
+
+.card .-cats:hover img{
+    transform: scale(1.5) rotate(5deg);
+}
+.card.-post {
+    display: flex; /* Flexbox para organizar elementos en fila */
+    flex-direction: row; /* Asegura que estén en una fila */
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+    align-items: center; /* Centra verticalmente los elementos */
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.card.-post .box-img {
+    width: 35%; /* Ancho del 35% */
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card.-post .box-img img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    border-radius: 4px;
+    transition: ease 0.5s;
+}
+
+.card.-post:hover .box-img img {
+    transform: scale(1.5) rotate(5deg); /* Efecto al pasar el ratón */
+}
+
+.card.-post .box-content {
+    width: 65%; /* Ancho del 65% */
+    padding: 1em 2em; /* Espaciado interno */
+}
+
+.card.-post .box-content h4 {
+    margin: 0 0 1em 0; /* Margen inferior para separar del párrafo */
+}
+
+.card.-post .box-content p {
+    margin: 0;
+    color: rgba(0, 0, 0, .5); /* Color de texto */
+}
+
+/* Responsividad */
+@media (max-width: 991px) {
+    .card.-post {
+        flex-direction: column; /* Apila los elementos verticalmente en pantallas pequeñas */
+    }
+
+    .card.-post .box-img,
+    .card.-post .box-content {
+        width: 100%; /* Ambos elementos ocupan todo el ancho */
+    }
+
+    .card.-post .box-content {
+        margin-top: 1em;
+    }
+}
