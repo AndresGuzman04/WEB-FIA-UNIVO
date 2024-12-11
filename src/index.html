@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIA UNIVO</title>
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
 
     <header class="header">
@@ -18,23 +19,23 @@
             <h1 class="logo title">FIA UNIVO</h1>
             <nav class="nav">
                 <div class="menu">
-                    <li class="item"><a href="" class="link">home</a></li>
-                    <li class="item"><a href="" class="link">about</a></li>
-                    <li class="item"><a href="" class="link">posts</a></li>
-                    <li class="item"><a href="" class="link">contact</a></li>
+                    <li class="item"><a href="" class="link">Inicio</a></li>
+                    <li class="item"><a href="about.html" class="link">Sobre Nosotros</a></li>
                 </div>
             </nav>
         </div>
     </header>
 
+
     <main class="main">
+        <!--Slider Principal-->
         <section class="slider">
             <div class="container">
                 <div class="swiper-container mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/img/01.jpg" alt="" class="img"></div>
-                        <div class="swiper-slide"><img src="/img/01.jpg" alt="" class="img"></div>
-                        <div class="swiper-slide"><img src="/img/01.jpg" alt="" class="img"></div>
+                        <div class="swiper-slide"><img src="/img/1.svg" alt="" class="img"></div>
+                        <div class="swiper-slide"><img src="/img/2.svg" alt="" class="img"></div>
+                        <div class="swiper-slide"><img src="/img/3.svg" alt="" class="img"></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -43,50 +44,84 @@
             <div class="swiper-button-next"><i class="bx bx-right-arrow-alt"></i></div>
         </section>
 
-        <section class="section -cats">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-3 colmd-6 col-12">
-                        <div class="card -cats">
-                            <figure>
-                                <a href="" class="link"></a>
-                                <img src="/img/01.jpg" alt="">
-                                <figcaption class="title">project 1</figcaption>
-                            </figure>
-                        </div>
+        <section class="gallery">
+            <div class="container py-5">
+                <h1 class="text-center">Galería de Proyectos Feria de Logros</h1>
+                <h1 class="text-center">FIA UNIVO 2024</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+                    <!--Cards informativas-->
+                    <div class="col">
+                        <div class="card card-gallery card-center" style="width: 18rem;">
+                            <img src="/img/Proyecto2.JPG" class="card-img-top" alt="Proyecto 1">
+                            <div class="card-body">
+                              <h5 class="card-title"><strong>Ingeniería de puente</strong></h5>
+                              <p class="card-text>">Demostrar el diseño de un puente, todo su proceso desde sus estudios previos hasta que la obra es entregada...</p>
+                            </div>
+                            <div class="d-flex justify-content-around mb-5">
+                                <button class="btn btn-primary">Leer más</button>
+                            </div>
+                          </div>
                     </div>
-
-                    <div class="col-lg-3 colmd-6 col-12">
-                        <div class="card -cats">
-                            <figure>
-                                <a href="" class="link"></a>
-                                <img src="/img/01.jpg" alt="">
-                                <figcaption class="title">project 2</figcaption>
-                            </figure>
-                        </div>
+                    <div class="col">
+                        <div class="card card-gallery card-center" style="width: 18rem;">
+                            <img src="/img/Proyecto1.JPG" class="card-img-top" alt="Proyecto 2">
+                            <div class="card-body">
+                              <h5 class="card-title"><strong>Concreto armado</strong></h5>
+                              <p class="card-text>">Se centra en simbolizar todo lo que se fabrica con el hierro, concreto. Como una mezcla de todo...</p>
+                            </div>
+                            <div class="d-flex justify-content-around mb-5">
+                                <button class="btn btn-primary">Leer más</button>
+                            </div>
+                          </div>
                     </div>
-
-                    <div class="col-lg-3 colmd-6 col-12">
-                        <div class="card -cats">
-                            <figure>
-                                <a href="" class="link"></a>
-                                <img src="/img/01.jpg" alt="">
-                                <figcaption class="title">project 3</figcaption>
-                            </figure>
-                        </div>
+                    <div class="col">
+                        <div class="card card-gallery card-center" style="width: 18rem;">
+                            <img src="/img/Proyecto3.JPG" class="card-img-top" alt="Proyecto 3">
+                            <div class="card-body">
+                              <h5 class="card-title"><strong>Catedral de Worms</strong></h5>
+                              <p class="card-text>">El objetivo de este grupo de estudiantes de arquitectura es modelar la fachada de la Catedral de Worms...</p>
+                            </div>
+                            <div class="d-flex justify-content-around mb-5">
+                                <button class="btn btn-primary">Leer más</button>
+                            </div>
+                          </div>
                     </div>
-
-                    <div class="col-lg-3 colmd-6 col-12">
-                        <div class="card -cats">
-                            <figure>
-                                <a href="" class="link"></a>
-                                <img src="/img/01.jpg" alt="">
-                                <figcaption class="title">project 4</figcaption>
-                            </figure>
-                        </div>
+                    <div class="col">
+                        <div class="card card-gallery card-center" style="width: 18rem;">
+                            <img src="/img/Proyecto4.JPG" class="card-img-top" alt="Proyecto 4">
+                            <div class="card-body">
+                              <h5 class="card-title"><strong>Embarcación controlada por Bluetooth</strong></h5>
+                              <p class="card-text>">Proyecto desarollado para la materia de eléctronica analógica y digital. Desarrollado por estudiantes...</p>
+                            </div>
+                            <div class="d-flex justify-content-around mb-5">
+                                <button class="btn btn-primary">Leer más</button>
+                            </div>
+                          </div>
                     </div>
-
+                    <div class="col">
+                        <div class="card card-gallery card-center" style="width: 18rem;">
+                            <img src="/img/Proyecto5.JPG" class="card-img-top" alt="Proyecto 5">
+                            <div class="card-body">
+                              <h5 class="card-title"><strong>Simulación: Vidrio</strong></h5>
+                              <p class="card-text>">Este proyecto busca demostrar todo lo relacionado al vidrio, sus resistencia, sus tipos, normas por las que se rigen para su implementación...</p>
+                            </div>
+                            <div class="d-flex justify-content-around mb-5">
+                                <button class="btn btn-primary">Leer más</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-gallery card-center" style="width: 18rem;">
+                            <img src="/img/Proyecto6.JPG" class="card-img-top" alt="Proyecto 6">
+                            <div class="card-body">
+                              <h5 class="card-title"><strong>Bolsas Ecológicas</strong></h5>
+                              <p class="card-text>">Este proyecto está enfocado en bolsas reutilizables para la empresa de textiles ACONSA S.A de C.V en San Miguel. A través del análisis de mercado...</p>
+                            </div>
+                            <div class="d-flex justify-content-around mb-5">
+                                <button class="btn btn-primary">Leer más</button>
+                            </div>
+                          </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -95,76 +130,108 @@
             <div class="container">
                 <div class="row">
 
+                    <!--Contenido en formato de posts-->
                     <div class="col-lg-8 col-12">
-                        <h2 class="title -border">Posts</h2>
-                        
+                        <h2 class="title -border">Explora otros proyectos</h2>
+                    </br>
+
 
                         <!– Proyectos –>
-                        <article class="card -post">
-
-                            
-                            <div class="box-img">
-                                <img src="/img/03.jpg" alt="">
-                            </div>
-
-                            <div class="box-content">
-                                <h4 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. !</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit praesentium provident inventore nihil, culpa exercitationem minima consectetur quaerat doloremque repudiandae quia modi odit expedita, atque libero impedit at aspernatur ea?</p>
-                            </div>
-                            
-                        </article>
-
-                        <!– Proyectos –>
-                        <article class="card -post">
-
-                            
-                            <div class="box-img">
-                                <img src="/img/03.jpg" alt="">
-                            </div>
-
-                            <div class="box-content">
-                                <h4 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. !</h4>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit praesentium provident inventore nihil, culpa exercitationem minima consectetur quaerat doloremque repudiandae quia modi odit expedita, atque libero impedit at aspernatur ea?</p>
-                            </div>
-                            
-                        </article>
+                            <article class="card -post">
 
 
-                        <a href="" class="load">Cargar mas posts</a>
+                                <div class="box-img">
+                                    <img src="/img/Proyecto7.JPG" alt="Proyecto 7">
+                                </div>
+
+                                <div class="box-content">
+                                    <h4 class="title"><strong>Maquinaria de construcción</strong></h4>
+                                    <p>Carrera: Ingeniería Civil, 2do año. </br>
+                                        La maqueta presenta en si una grúa que forma parte del grupo de maquinarías de construccion.
+                                        El objetivo de este proyecto es dar a conocer todos los tipos de maquinaría, que son fundamentales 
+                                        para los trabajos de construcción.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <!– Proyectos –>
+                                <article class="card -post">
+
+
+                                    <div class="box-img">
+                                        <img src="/img/Proyecto8.JPG" alt="Proyecto 8">
+                                    </div>
+
+                                    <div class="box-content">
+                                        <h4 class="title"><strong>Evaluación del impacto social y ambiental en la formulación de proyectos</strong>
+                                        </h4>
+                                        <p>Se investigó la integración de impactos sociales y ambientales en proyectos y su influencia en decisones empresariales.
+                                            Esta demostró resultados positivos en empresas salvadoreñas como Calvo y La Constancia, por ejemplo en el caso de La Constancia
+                                            produce con energía 100% renovable, reduciendo así mas de 9,000 toneladas de CO2.
+                                        </p>
+                                    </div>
+
+                                </article>
+
+                            <!– Proyectos –>
+                                <article class="card -post">
+
+
+                                    <div class="box-img">
+                                        <img src="/img/Proyecto9.JPG" alt="Proyecto 9">
+                                    </div>
+
+                                    <div class="box-content">
+                                        <h4 class="title"><strong>Mezcla asfáltica</strong>
+                                        </h4>
+                                        <p>Carrera: Ingeniería Civil, 4to año. </br>
+                                        Se demuestra como la mezcla asfáltica está debidamente constituida para que esta sea correctamente aplicada en pavimentación de calles
+                                        o carreteras.</p>
+                                    </div>
+
+                                </article>
+                            <!– Proyectos –>
+                                <article class="card -post">
+
+
+                                    <div class="box-img">
+                                        <img src="/img/Proyecto10.JPG" alt="Proyecto 10">
+                                    </div>
+
+                                    <div class="box-content">
+                                        <h4 class="title"><strong>Cables en tensión</strong></h4>
+                                        <p>Carrera: Ingeniería Civil, 4to año. </br>
+                                        Con este proyecto se muestra el tipo de cable que se puede ocupar para puentes, grúas, ascensores.
+                                        En este caso se representa el puente Golden Gate.</p>
+                                    </div>
+
+                                </article> 
+
+
                     </div>
 
                     <aside class="col-lg-4 col-12">
-                        <h3 class="title -border">About</h3>
-                        <div class="box -box-img">
-                            <img src="/img/02.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque modi temporibus accusamus. Vitae delectus rem necessitatibus sapiente, asperiores repudiandae, eum ea eveniet consectetur, a odio officiis ducimus nisi quasi autem.</p>
-                        </div>
-
-                        <h3 class="title -border">Tags</h3>
-                        <div class="box -box-tag">
-                            <ul class="tags">
-                                <li><a href="">TAG 001</a></li>
-                                <li><a href="">TAG 002</a></li>
-                                <li><a href="">TAG 003</a></li>
-                                <li><a href="">TAG 004</a></li>
-                                <li><a href="">TAG 005</a></li>
-                                <li><a href="">TAG 006</a></li>
-                            </ul>
-                        </div>
-
-                    </aside>
 
                 </div>
+
+
+                </aside>
+
+            </div>
             </div>
         </section>
 
     </main>
 
+    <!--Footer-->
     <footer class="footer">
-        <span><span>FIA UNIVO 2024</span></span>
+        <span><span>© 2024 FIA UNIVO</span></span>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/js/main.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
 </body>
+
 </html>
